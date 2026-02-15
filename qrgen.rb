@@ -5,21 +5,21 @@
 class Qrgen < Formula
   desc "A terminal-based QR code generator with an interactive TUI"
   homepage "https://github.com/DalyChouikh/qr-code-generator"
-  version "1.0.3"
+  version "1.0.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/DalyChouikh/qr-code-generator/releases/download/v1.0.3/qrgen_1.0.3_darwin_amd64.tar.gz"
-      sha256 "a9f2c9c58b371419512a4f0c48c14d5e2925b545023a7f60fab84af240862e49"
+      url "https://github.com/DalyChouikh/qr-code-generator/releases/download/v1.0.4/qrgen_1.0.4_darwin_amd64.tar.gz"
+      sha256 "16dba66ee32e4220b6adf82b8ffef5bd9d21805f4a2f66db5195f5fd7a93a192"
 
       def install
         bin.install "qrgen"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/DalyChouikh/qr-code-generator/releases/download/v1.0.3/qrgen_1.0.3_darwin_arm64.tar.gz"
-      sha256 "32cc14820861791e9b00efaed2d5c590f9f5059a6033207246f1377309ef8b08"
+      url "https://github.com/DalyChouikh/qr-code-generator/releases/download/v1.0.4/qrgen_1.0.4_darwin_arm64.tar.gz"
+      sha256 "ca8791a2ad5368ea4aabec74af5615b6a757f55c6d4e873bbe8dee07b68f8a8b"
 
       def install
         bin.install "qrgen"
@@ -29,15 +29,15 @@ class Qrgen < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/DalyChouikh/qr-code-generator/releases/download/v1.0.3/qrgen_1.0.3_linux_amd64.tar.gz"
-      sha256 "f42404dc38685828e06b3bf9a2cb93e7131bc7036da93f0246550dbfaa146780"
+      url "https://github.com/DalyChouikh/qr-code-generator/releases/download/v1.0.4/qrgen_1.0.4_linux_amd64.tar.gz"
+      sha256 "5295541488da223824603344829c7965d4b3aaa5dcda8a88e3020f6fcca0affb"
       def install
         bin.install "qrgen"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/DalyChouikh/qr-code-generator/releases/download/v1.0.3/qrgen_1.0.3_linux_arm64.tar.gz"
-      sha256 "9b3aea86c048be588ec53fb5e190b61bc4a3a2886c8bcc1b68f3a41ae4c26960"
+      url "https://github.com/DalyChouikh/qr-code-generator/releases/download/v1.0.4/qrgen_1.0.4_linux_arm64.tar.gz"
+      sha256 "153f0e53fa885caaf4abdbf4dd4572c48dfd1a56bf401d9b0ffd9994c5340368"
       def install
         bin.install "qrgen"
       end
